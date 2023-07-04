@@ -31,7 +31,7 @@ I bought [pi pico](https://www.raspberrypi.com/documentation/microcontrollers/ra
 Clone the project
 
 ```bash
-  git clone [https://link-to-project](https://github.com/Cloudzik1337/HidRemapper)
+  git clone https://link-to-project
 ```
 
 Go to the project directory
@@ -70,19 +70,17 @@ Create Spotify App.
 
 7. Grab any dependancies with `python -m pip install keyboard` and `python -m pip install spotipy`
 
-8. Open VolumeController.py with a text editor, and populate `SPOTIFY_USERNAME`, `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET` with the ID's from above.
 
-9. By default, Spotify volume up and down are bound to Page Up and Page Down. You can find the names of other keys to bind Spotify volume up and down [here](https://github.com/boppreh/keyboard/blob/e277e3f2baf53ee1d7901cbb562f443f8f861b90/keyboard/_canonical_names.py). NOTE: It appears that the options to rebind to are limited, so it could be easier to rebind your desired key (or rotary encoder) to the desired physical keys.
 
-10. Place `VolumeController.py`, `VolumeController.bat`, `VolumeController.vbs` in the same folder somewhere.
+## Configuring the Spotify Volume Controller
 
-11. Double-click `VolumeController.bat`, and a browser should open asking for authorization for your app to run.
+1. Install the necessary dependencies with the following commands:
+```bash
+python -m pip install keyboard
+python -m pip install spotipy
+```
+2.Open VolumeController.py with a text editor and populate the SPOTIFY_USERNAME, SPOTIFY_CLIENT_ID, and SPOTIFY_CLIENT_SECRET variables with the IDs obtained in the previous step.
 
-12. The script should now be running, and the opened terminal should just have `>>>` as the prompt (meaning you are in a Python instance).
+3. A .cache file should be automatically created in the same directory, containing the necessary information to run the script.
 
-13. A `.cache` file should be automatically created in the same directory with the information needed to run the script
-
-14. If you want to have the python script automatically run at startup, make a shortcut of `VolumeController.vbs` and place it in the folder that appears when you hit `Win + R` and enter `shell:startup`.
-
-15. And you are ready to go :D
-
+4. You are now ready to go! Enjoy the HID remapper functionalities.
