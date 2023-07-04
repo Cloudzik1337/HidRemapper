@@ -31,7 +31,7 @@ I bought [pi pico](https://www.raspberrypi.com/documentation/microcontrollers/ra
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone [https://link-to-project](https://github.com/Cloudzik1337/HidRemapper)
 ```
 
 Go to the project directory
